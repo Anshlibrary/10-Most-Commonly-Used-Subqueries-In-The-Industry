@@ -24,6 +24,16 @@ INSERT INTO Customers (Customer_id, First_Name, Last_Name, Country, Score) VALUE
 (3, 'Mary', NULL, 'USA', 750),
 (4, 'Mark', 'Schwarz', 'Germany', 500),
 (5, 'Anna', 'Adams', 'USA', NULL)
+(6, 'Emily', 'Clark', 'Canada', 820),
+(7, 'John', 'Doe', 'USA', 680),
+(8, 'Sophia', 'Meier', 'Germany', 540),
+(9, 'Carlos', 'Ramirez', 'Mexico', 710),
+(10, 'Ava', NULL, 'UK', 770),
+(11, 'Liam', 'O’Brien', 'Ireland', 790),
+(12, 'Emma', 'Nguyen', 'Vietnam', NULL),
+(13, 'David', 'Lee', 'South Korea', 810),
+(14, 'Isabella', 'Rossi', 'Italy', 620),
+(15, 'Noah', 'Patel', 'India', 600);
 
 --Create Table: Employees
 
@@ -46,6 +56,16 @@ INSERT INTO Employees (Employee_id, FirstName, LastName, Department, BirthDate, 
 (3, 'Mary', NULL, 'Sales', '1986-01-05', 'F', 1),
 (4, 'Michael', 'Ray', 'Sales', '1977-02-10', 'M', 2),
 (5, 'Carol', 'Baker', 'Sales', '1982-02-11', 'F', 3)
+(6, 'Emily', 'Stone', 'HR', '1990-03-15', 'F', 1),
+(7, 'James', 'Anderson', 'HR', '1985-05-22', 'M', 6),
+(8, 'Olivia', 'Martin', 'IT', '1992-07-08', 'F', 4),
+(9, 'Ethan', 'Walker', 'IT', '1989-09-12', 'M', 4),
+(10, 'Sophia', 'Moore', 'IT', '1991-11-30', 'F', 8),
+(11, 'Daniel', 'Scott', 'Finance', '1980-04-01', 'M', 1),
+(12, 'Ava', 'King', 'Finance', '1983-06-18', 'F', 11),
+(13, 'William', 'Lopez', 'Marketing', '1993-08-25', 'M', 2),
+(14, 'Isabella', 'Turner', 'Sales', '1994-10-05', 'F', 3),
+(15, 'Liam', 'Hall', 'HR', '1995-12-21', 'M', 7);
 
 --Create Table: Orders
 
@@ -87,6 +107,16 @@ INSERT INTO Orders (OrderID, ProductID, CustomerID, SalesPersonID, OrderDate, Sh
 (18, 105, 4, 1, '2025-07-08', '2025-07-12', 'Unconfirmed', '1223 Ash Way', '1811 Winter Oak Rd', 11, 121.00, '2025-07-08 18:00:55.0000000'),
 (19, 105, 1, 1, '2025-07-09', '2025-07-13', 'Awaiting Payment', '5312 Laurel Ridge', '4447 Warm Springs', 12, 132.00, '2025-07-09 19:10:00.0000000'),
 (20, 101, 1, 1, '2025-07-10', '2025-07-14', 'Refunded', '6820 Moonlight Rd', '8400 Crystal Ln', 13, 143.00, '2025-07-10 20:20:20.0000000')
+(21, 106, 4, 2, '2025-07-11', '2025-07-15', 'Delivered', '7449 Green Leaf Ct.', '1222 Northgate Ave', 2, 90.00, '2025-07-11 10:10:10.0000000'),
+(22, 106, 2, 3, '2025-07-12', '2025-07-16', 'Shipped', '3333 Violet Blvd', '6777 Oak Hollow Dr', 3, 120.00, '2025-07-12 11:20:30.0000000'),
+(23, 104, 3, 4, '2025-07-13', '2025-07-17', 'Delivered', '200 Lake Shore Dr', '9012 Elm Heights', 4, 140.00, '2025-07-13 12:30:40.0000000'),
+(24, 107, 5, 4, '2025-07-14', '2025-07-18', 'Shipped', '1111 Breeze Dr', '3000 Hill Valley Rd', 5, 160.00, '2025-07-14 13:40:50.0000000'),
+(25, 107, 6, 2, '2025-07-15', '2025-07-19', 'Delivered', '5000 West Palm Ln', '1044 Sunny Dr', 6, 180.00, '2025-07-15 14:51:55.0000000'),
+(26, 102, 4, 2, '2025-07-16', '2025-07-20', 'Dispatched', '8778 Lavender Loop', '3339 Dusty Trail', 7, 200.00, '2025-07-16 15:55:05.0000000'),
+(27, 101, 1, 3, '2025-07-17', '2025-07-21', 'On Hold', '6464 Crystal River', '7779 Old Hollow Dr', 8, 220.00, '2025-07-17 16:05:15.0000000'),
+(28, 103, 4, 2, '2025-07-18', '2025-07-22', 'Packed', '3922 Amber Crest', '1100 Jade Hill Blvd', 9, 240.00, '2025-07-18 17:15:25.0000000'),
+(29, 104, 3, 5, '2025-07-19', '2025-07-23', 'Cancelled', '2330 Stonegate Way', NULL, 10, 260.00, '2025-07-19 18:25:35.0000000'),
+(30, 105, 9, 4, '2025-07-20', '2025-07-24', 'Processing', NULL, '5599 Ridgeview Ln', 11, 280.00, '2025-07-20 19:35:45.0000000');
 
 -- Create Table: OrdersArchive
 
@@ -118,6 +148,16 @@ INSERT INTO OrdersArchive (OrderID, ProductID, CustomerID, SalesPersonID, OrderD
 (6, 104, 3, 5, '2024-05-05', '2024-05-10', 'Delivered', '543 Belmont Rd.', '3768 Door Way', 2, 50.00, '2024-05-07 13:22:05.0000000'),
 (6, 101, 3, 5, '2024-05-05', '2024-05-10', 'Delivered', '543 Belmont Rd.', '3768 Door Way', 2, 50.00, '2024-05-12 20:36:55.0000000'),
 (7, 102, 3, 5, '2024-06-15', '2024-06-20', 'Shipped', '111 Main St', '222 Billing St', 0, 60.00, '2024-06-16 23:25:15.0000000')
+(8, 106, 4, 2, '2024-06-18', '2024-06-23', 'Delivered', '12 Lakeside Ave', '34 River Blvd', 1, 45.00, '2024-06-18 10:15:12.0000000'),
+(9, 105, 2, 3, '2024-06-20', '2024-06-24', 'Shipped', '98 Greenway Dr', '98 Greenway Dr', 2, 25.00, '2024-06-20 12:45:55.0000000'),
+(10, 104, 1, 4, '2024-06-21', '2024-06-26', 'Pending', '11 Cedar St', '99 Elm Blvd', 1, 35.00, '2024-06-21 09:35:44.0000000'),
+(11, 107, 5, 4, '2024-06-25', '2024-06-29', 'Shipped', '77 Highland Rd', '88 Oak St', 1, 40.00, '2024-06-25 17:10:23.0000000'),
+(12, 107, 6, 2, '2024-07-01', '2024-07-05', 'Delivered', '14 Sunset Blvd', '45 Sunshine Ave', 1, 55.00, '2024-07-01 15:45:00.0000000'),
+(13, 102, 7, 3, '2024-07-03', '2024-07-08', 'Shipped', '500 Tech Park', '1234 Silicon Rd', 1, 60.00, '2024-07-03 18:22:30.0000000'),
+(14, 101, 8, 3, '2024-07-04', NULL, 'Pending', '43 Rose St', NULL, 2, 150.00, '2024-07-04 10:40:19.0000000'),
+(15, 103, 4, 2, '2024-07-05', '2024-07-09', 'Shipped', '76 Forest Ln', '12 Breeze Way', 3, 66.00, '2024-07-05 11:22:05.0000000'),
+(16, 104, 3, 5, '2024-07-06', '2024-07-10', 'Delivered', '21 Marina Walk', '999 Wave Rd', 5, 44.95, '2024-07-06 13:55:12.0000000'),
+(17, 105, 9, 4, '2024-07-07', '2024-07-12', 'Cancelled', '909 Driftwood St', NULL, 1, 18.50, '2024-07-07 16:34:20.0000000');
 
 
 --Create Table: Products
@@ -137,3 +177,18 @@ INSERT INTO Products (ProductID, Product, Category, Price) VALUES
 (103, 'Socks', 'Clothing', 20.00),
 (104, 'Caps', 'Clothing', 25.00),
 (105, 'Gloves', 'Clothing', 30.00)
+(106, 'Helmet', 'Accessories', 45.00),
+(107, 'Water Bottle Cage', 'Accessories', 12.50),
+(108, 'Jersey', 'Clothing', 35.00),
+(109, 'Shorts', 'Clothing', 40.00),
+(110, 'Sunglasses', 'Accessories', 55.00),
+(111, 'Backpack', 'Accessories', 60.00),
+(112, 'Rain Jacket', 'Clothing', 75.00),
+(113, 'Arm Warmers', 'Clothing', 22.00),
+(114, 'Chain Lube', 'Maintenance', 8.99),
+(115, 'Multi-tool', 'Maintenance', 18.50),
+(116, 'Bike Pump', 'Accessories', 28.00),
+(117, 'Pedals', 'Accessories', 48.00),
+(118, 'Waterproof Pants', 'Clothing', 65.00),
+(119, 'Repair Kit', 'Maintenance', 20.00),
+(120, 'Reflective Vest', 'Safety', 30.00);
